@@ -1,0 +1,18 @@
+
+<view style='margin-top:50rpx;'>自定义日期单项:</view>
+<button bindtap="click">{{date0}}</button>
+<view style='margin-top:100rpx;'>自定义日期双项:</view>
+<button bindtap="clickMore">{{date1}}至{{date2}}</button>
+<view style='margin-top:100rpx;'>自定义地区选择:</view>
+<button bindtap="clickRegion">{{province}}-{{city}}-{{area}}</button>
+<view style='margin-top:100rpx;'>自定义时间选择:</view>
+<button bindtap="changeTime">{{date3}}</button>
+
+    <pickerdate id="pickerdate" bindchange="changeDate" name="时间选择">
+    </pickerdate>
+ <pickerdatemore id="pickerdatemore" bindchange="changeDate" name="时间选择">
+    </pickerdatemore>
+     <pickerregion  id="pickerregion" bindchange="changeRegion" name="地区选择">
+    </pickerregion>
+       <pickertime  id="pickertime" bindchange="changeDate" name="时间选择">
+    </pickertime>

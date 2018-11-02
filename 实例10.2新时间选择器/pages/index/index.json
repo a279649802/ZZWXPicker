@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "pickerdate": "/pickerdate/pickerdate",
+    "pickerdatemore": "/pickerdatemore/pickerdatemore",
+    "pickerregion": "/pickerregion/pickerregion",
+    "pickertime": "/pickertime/pickertime"
+  }}

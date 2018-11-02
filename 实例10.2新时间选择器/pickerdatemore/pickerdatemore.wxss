@@ -1,0 +1,85 @@
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+
+.mask{
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.3);
+  position:fixed;
+  top:0;
+  left:0;
+}
+.pickernormal{
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:#fff;
+  transform: translate(0,100%);
+}
+ .modalhead{
+  display: flex;
+  padding:49rpx 36rpx 31rpx 36rpx;
+  font-size: 28rpx;
+  border-bottom:1rpx solid #ccc;
+}
+ .modalhead>view{
+  flex:auto;
+  text-align:left;
+  font-size: 30rpx;
+  color: #666;
+}
+ .modalhead>view:last-child{
+  text-align:right;
+  color:#40A9FF;
+  border-bottom:0;
+}
+picker-view-column{
+  background: #fff;
+  text-align: center;
+  color: #333;
+  font-size: 30rpx;
+}
+.indicator{
+  height: 100rpx;
+}
+
+.modalhead .center{
+  text-align: center;
+  flex: auto;
+  font-size: 36rpx;
+  color: #333;
+}
+
+.middleChoose{
+  position: relative;
+  width: 100%;
+  height: 130rpx;
+  line-height: 130rpx;
+  font-size: 36rpx;
+
+}
+.middleChoose >view{
+  display: inline-block;
+}
+.middleChoose-left{
+  position: absolute;
+  top: 0rpx;
+  left: 60rpx;
+}
+.active{
+  color: blue;
+}
+.middleChoose-middle{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.middleChoose-right{
+  position: absolute;
+  top: 0rpx;
+  right: 60rpx;
+} 

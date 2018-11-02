@@ -1,0 +1,27 @@
+
+  <!-- <button bindtap='shows'>click</button>
+  <view>{{year}}年{{month}}月{{day}}日</view> -->
+
+<view >
+  <view class='mask' wx:if="{{show}}" bindtap="hidemodal"></view>
+    <view class='pickernormal' animation="{{animationData}}">
+      <view class='modalhead' >
+        <view bindtap="hidemodal">取消</view>
+        <view class='center'>{{name}}</view>
+        <view bindtap="confirmmodal">确定</view>
+      </view> 
+      <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value2}}" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{years}}" wx:key="i" style="line-height: 50px">{{item}}年</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{months}}" wx:key="i" style="line-height: 50px">{{item}}月</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{days}}" wx:key="i" style="line-height: 50px">{{item}}日</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>
+
+

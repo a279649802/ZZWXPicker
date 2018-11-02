@@ -1,0 +1,31 @@
+
+
+
+<view >
+  <view class='mask' wx:if="{{show}}" bindtap="hidemodal"></view>
+    <view class='pickernormal' animation="{{animationData}}">
+      <view class='modalhead' >
+        <view bindtap="hidemodal">取消</view>
+        <view class='center'>{{name}}</view>
+        <view bindtap="confirmmodal">确定</view>
+      </view>
+      <view class='middleChoose'>
+        <view class='middleChoose-left{{chooseLeft==true ? ".active" : ""}}' bindtap='chooseLeft'>{{yeartemp_L}}年{{monthtemp_L}}月{{daytemp_L}}日</view>
+        <view class='middleChoose-middle'>至</view>
+        <view class='middleChoose-right{{chooseLeft==false ? ".active" : ""}}' bindtap='chooseRight'>{{yeartemp_R}}年{{monthtemp_R}}月{{daytemp_R}}日</view>
+      </view> 
+      <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value2}}" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{years}}" wx:key="i" style="line-height: 50px">{{item}}年</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{months}}" wx:key="i" style="line-height: 50px">{{item}}月</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{days}}" wx:key="i" style="line-height: 50px">{{item}}日</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>
+
+
