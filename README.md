@@ -1,7 +1,11 @@
 # ZZWXPicker
+#### Introduce :
+This component includes time, region, date picker
 #### Show results:
 ![](https://github.com/a279649802/ZZWXPicker/raw/master/ZZWXPicker.gif)  
 #### How To Use:
+###### Copy the code in the following file
+index.js:
 ```
   click:function(){
     var that = this;
@@ -13,7 +17,7 @@
     });
   },
 ```
-
+index.json:
 ```
 {
   "usingComponents": {
@@ -23,7 +27,7 @@
     "pickertime": "/pickertime/pickertime"
   }}
 ```
-
+index.html
 ```
     <pickerdate id="pickerdate" bindchange="changeDate" name="时间选择">
     </pickerdate>
